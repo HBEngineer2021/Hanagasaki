@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="SplashViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="SplashViewController" customModule="Hanagasaki" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="lMn-de-zwj">
+                                <rect key="frame" x="60" y="184" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="vne-WW-lmR"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KyS-ij-kKm">
+                                <rect key="frame" x="40" y="444" width="240" height="55"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="kFs-oh-pyy" appends="YES" id="64c-59-fb5"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="KyS-ij-kKm" secondAttribute="bottom" constant="69" id="HvM-Yd-mVf"/>
+                            <constraint firstItem="lMn-de-zwj" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="60" id="QEk-5m-zym"/>
+                            <constraint firstItem="KyS-ij-kKm" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="UKE-gO-pfK"/>
+                            <constraint firstItem="lMn-de-zwj" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="dEc-dO-Kte"/>
+                            <constraint firstItem="lMn-de-zwj" firstAttribute="centerX" secondItem="KyS-ij-kKm" secondAttribute="centerX" id="fjH-7z-Xqd"/>
+                            <constraint firstItem="KyS-ij-kKm" firstAttribute="top" secondItem="lMn-de-zwj" secondAttribute="bottom" constant="60" id="ohO-kt-iG3"/>
+                            <constraint firstItem="lMn-de-zwj" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="184" id="ti9-Mw-SV8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="splashImage" destination="lMn-de-zwj" id="Jlv-SJ-fAt"/>
+                        <outlet property="swipeView" destination="KyS-ij-kKm" id="HNZ-QW-gDd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="kFs-oh-pyy">
+                    <connections>
+                        <action selector="rightSwipe:" destination="Y6W-OH-hqX" id="87O-Oe-rsx"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-11.25" y="24.295774647887324"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="profile" width="400" height="400"/>
+    </resources>
+</document>

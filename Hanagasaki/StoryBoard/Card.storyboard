@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Card-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="BusinessCardViewController" title="Card" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="BusinessCardViewController" customModule="Hanagasaki" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="NRd-r4-c3O">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="card" translatesAutoresizingMaskIntoConstraints="NO" id="ltM-oH-CFA">
+                                <rect key="frame" x="16" y="63" width="288" height="153"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Rgi-dY-nhc" appends="YES" id="ucW-9H-FPi"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="twitter" translatesAutoresizingMaskIntoConstraints="NO" id="5Fe-gc-a20">
+                                <rect key="frame" x="70" y="243" width="180" height="180"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo_symbol" translatesAutoresizingMaskIntoConstraints="NO" id="f8w-Tj-bP3">
+                                <rect key="frame" x="198" y="469" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="yZW-MZ-gqV" appends="YES" id="45C-FF-pC8"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yt_icon_rgb" translatesAutoresizingMaskIntoConstraints="NO" id="kOg-aW-OOg">
+                                <rect key="frame" x="258" y="469" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="gWE-GG-hW3" appends="YES" id="1Cx-rV-4DJ"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Instagram_AppIcon_Aug2017" translatesAutoresizingMaskIntoConstraints="NO" id="60X-Qm-d1X">
+                                <rect key="frame" x="140" y="469" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="prX-dI-YEz" appends="YES" id="6Or-OB-6sK"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LINE_APP_iOS" translatesAutoresizingMaskIntoConstraints="NO" id="13F-qo-U0D">
+                                <rect key="frame" x="84" y="469" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="A1p-W4-atM" appends="YES" id="4gk-GY-QPq"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="2021 Twitter logo - blue" translatesAutoresizingMaskIntoConstraints="NO" id="n4s-Qv-2aT">
+                                <rect key="frame" x="28" y="459" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="mxW-zd-sxU" appends="YES" id="X8i-ik-TQV"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" tag="1" title="Card" image="creditcard.fill" catalog="system" id="keC-HY-ctS" userLabel="Card"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="imageCard" destination="ltM-oH-CFA" id="Zff-0m-uHV"/>
+                        <outlet property="imageQR" destination="5Fe-gc-a20" id="Zyt-Pf-KZk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="mxW-zd-sxU">
+                    <connections>
+                        <action selector="tiwitterQR:" destination="Y6W-OH-hqX" id="13z-br-ZsE"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="A1p-W4-atM">
+                    <connections>
+                        <action selector="lineQR:" destination="Y6W-OH-hqX" id="Liq-Id-NGr"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="prX-dI-YEz">
+                    <connections>
+                        <action selector="instagramQR:" destination="Y6W-OH-hqX" id="cOx-rZ-M4z"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="yZW-MZ-gqV">
+                    <connections>
+                        <action selector="noteQR:" destination="Y6W-OH-hqX" id="mId-EJ-q3C"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="gWE-GG-hW3">
+                    <connections>
+                        <action selector="youtubeQR:" destination="Y6W-OH-hqX" id="n2K-Z7-c8R"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Rgi-dY-nhc">
+                    <connections>
+                        <action selector="blogURL:" destination="Y6W-OH-hqX" id="hL3-4g-fie"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-18.75" y="67.605633802816897"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="2021 Twitter logo - blue" width="1034" height="851"/>
+        <image name="Instagram_AppIcon_Aug2017" width="300" height="300"/>
+        <image name="LINE_APP_iOS" width="1001" height="1000"/>
+        <image name="background" width="640" height="1136"/>
+        <image name="card" width="1500" height="500"/>
+        <image name="creditcard.fill" catalog="system" width="128" height="88"/>
+        <image name="logo_symbol" width="400" height="400"/>
+        <image name="twitter" width="1080" height="1080"/>
+        <image name="yt_icon_rgb" width="734" height="518"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

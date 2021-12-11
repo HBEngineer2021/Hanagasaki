@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Article-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ArticleViewController" title="Article" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" userLabel="Article" customClass="ArticleViewController" customModule="Hanagasaki" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="uVB-NK-b2b">
+                                <rect key="frame" x="0.0" y="-568" width="320" height="1136"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OrR-3Q-KAw">
+                                <rect key="frame" x="0.0" y="39" width="320" height="480"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="480" id="Oke-Y1-pSA"/>
+                                    <constraint firstAttribute="width" constant="320" id="xWA-SO-f2T"/>
+                                </constraints>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OrR-3Q-KAw" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="1cw-Kz-iuq"/>
+                            <constraint firstItem="OrR-3Q-KAw" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="1e0-Xl-tBH"/>
+                            <constraint firstItem="OrR-3Q-KAw" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="5xf-Y3-44O"/>
+                            <constraint firstItem="OrR-3Q-KAw" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" constant="-5" id="6Gk-JT-iMg"/>
+                            <constraint firstItem="OrR-3Q-KAw" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="39" id="OIk-Ua-6IA"/>
+                            <constraint firstItem="OrR-3Q-KAw" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="39" id="Oes-sB-muo"/>
+                            <constraint firstItem="OrR-3Q-KAw" firstAttribute="leading" secondItem="uVB-NK-b2b" secondAttribute="leading" id="a6G-42-tAF"/>
+                            <constraint firstItem="OrR-3Q-KAw" firstAttribute="trailing" secondItem="uVB-NK-b2b" secondAttribute="trailing" id="fn9-jr-h6d"/>
+                            <constraint firstAttribute="bottom" secondItem="OrR-3Q-KAw" secondAttribute="bottom" constant="49" id="gym-ct-2XR"/>
+                            <constraint firstItem="OrR-3Q-KAw" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="qlQ-9X-zmf"/>
+                            <constraint firstItem="OrR-3Q-KAw" firstAttribute="bottom" secondItem="uVB-NK-b2b" secondAttribute="bottom" constant="-49" id="xtj-i3-e4M"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Article" image="book.fill" catalog="system" id="jQc-dC-dja" userLabel="Atticle"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="articleTableView" destination="OrR-3Q-KAw" id="RAi-WE-6LX"/>
+                        <segue destination="k0Z-rp-725" kind="presentation" identifier="ArticleEntryViewController" destinationCreationSelector="ArticleEntryViewController" id="7eE-dL-Cwj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-18.75" y="67.605633802816897"/>
+        </scene>
+        <!--ArticleEntry-->
+        <scene sceneID="S6M-JR-X55">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ArticleEntry" id="k0Z-rp-725" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kdg-o1-9UF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="652" y="68"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="640" height="1136"/>
+        <image name="book.fill" catalog="system" width="128" height="102"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

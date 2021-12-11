@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cHc-tS-Nod">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="aQw-Y7-PUu">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cHc-tS-Nod" customClass="TabBarController" customModule="Hanagasaki" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oG7-AJ-P2o">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="3nk-YT-lIP" kind="relationship" relationship="viewControllers" destinationCreationSelector="ProfileViewController" id="9f3-W5-sXt"/>
+                        <segue destination="Acz-7h-gFk" kind="relationship" relationship="viewControllers" id="bQM-yj-wgB"/>
+                        <segue destination="xYi-yn-0YS" kind="relationship" relationship="viewControllers" id="iwm-IX-A7V"/>
+                        <segue destination="70x-Vh-3N8" kind="relationship" relationship="viewControllers" id="U60-4N-fKr"/>
+                        <segue destination="6TH-xW-LG1" kind="relationship" relationship="viewControllers" id="tFX-dT-44N"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HHZ-nf-jsM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-555" y="57"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="LWw-rW-txe">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="ProfileViewController" storyboardName="Profile" id="3nk-YT-lIP" userLabel="Profile" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Profile" image="person.fill" catalog="system" id="ocQ-Qx-uFn" userLabel="Profile"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7jL-8s-vfy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="154" y="-279"/>
+        </scene>
+        <!--Article-->
+        <scene sceneID="7Na-8X-5Fu">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="ArticleViewController" storyboardName="Article" id="Acz-7h-gFk" userLabel="Article" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="1" title="Article" image="book.fill" catalog="system" id="rmP-jq-aeB" userLabel="Article"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jFv-qd-ovl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="154" y="-199"/>
+        </scene>
+        <!--Video-->
+        <scene sceneID="hiV-yL-jVT">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="VideoViewController" storyboardName="Video" id="xYi-yn-0YS" userLabel="Video" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="2" title="Video" image="play.rectangle.fill" catalog="system" id="SBP-7k-MsE" userLabel="Video"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b98-4W-jyf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="150" y="-115"/>
+        </scene>
+        <!--Qiita-->
+        <scene sceneID="sna-SD-Mrl">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="QiitaViewController" storyboardName="Qiita" id="70x-Vh-3N8" userLabel="Qiita" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="3" title="Qiita" image="newspaper.fill" catalog="system" id="W90-qc-OXR" userLabel="Qiita"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Auf-XA-hvW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="156" y="-39"/>
+        </scene>
+        <!--Card-->
+        <scene sceneID="eff-a8-qEm">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="BusinessCardViewController" storyboardName="Card" id="6TH-xW-LG1" userLabel="Card" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="4" title="Card" image="creditcard.fill" catalog="system" id="b0b-C8-aEP" userLabel="Card"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="91Y-Nl-q79" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="186" y="57"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="book.fill" catalog="system" width="128" height="102"/>
+        <image name="creditcard.fill" catalog="system" width="128" height="88"/>
+        <image name="newspaper.fill" catalog="system" width="128" height="111"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="play.rectangle.fill" catalog="system" width="128" height="93"/>
+    </resources>
+</document>
